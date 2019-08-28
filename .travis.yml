@@ -3,8 +3,5 @@ language: python
 python:
   - "3.7"
 
-install:
-  - pip install -r MrTumble/requirements.txt
-
 script:
-  - python MrTumble/tests/test_MrTumble.py
+  - python -m unittest MrTumble/tests/test_MrTumble.py

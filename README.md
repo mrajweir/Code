@@ -1,4 +1,4 @@
-# Scratch
+# Code: A Public Scratchspace
 
 This repository contains individual projects or code snippets. More likely than not, what you'll find here is sample code or other relatively "useless" demos that exercise some library or API.
 

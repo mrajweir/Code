@@ -4,4 +4,4 @@ python:
   - "3.7"
 
 script:
-  - python -m unittest MrTumble/tests/test_MrTumble.py
+  - cd MrTumble; python -m unittest tests/test_MrTumble.py; cd ../

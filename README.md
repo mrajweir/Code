@@ -20,6 +20,13 @@ An attempt at implementing a simple genetic algorithm that cycles through and gu
 
 I wanted to graph the prime numbers over the range n..m. A notoriously inefficient spend of CPU time, but I wanted to write it anyway. There's a few small optimisations in there like ignoring even numbers after 2, etc. I'd like to multithread this next. For me, it's more about applying the principles of optimisation and getting the run time down than it is about generating prime numbers.
 
-## Tests
+### Collatz
+The  Collatz conjecture states that for any given number, x, if it's even, you divide by two and if it's odd, you multiply by three and add one, that all numbers for x will reduce down to 1 - eventually. 
 
+```
+f(x), x != 1 => if x mod 2 == 0, f(x/2)
+                if x mod 2 == 1, f(3x+1)
+```
+
+## Tests
 The "Build Passing" icon you see along the top refers to all given tests in all of the subprojects, where Travis is able to build and execute the unit tests. In reality, that statement will decompile to "The icon reflects the Python projects build status." 

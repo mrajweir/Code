@@ -8,6 +8,10 @@ Oh, and if anyone other than me is reading this: hi!
 
 ## Projects
 
+### Sudoku
+
+A brute force Sudoku solver with no optimization, except for the solving of blocks. (You only need four cells in non-adjacent positions if you know the integers for the rows and columns.) Strangely proud of it, and it was fun to write. I'll probably work on profiling it and making it quicker. Ideally I'd love it to solve the general problem of Sudoku.
+
 ### Mr Tumble
 
 A credit card number generator, that when given the first six and last four digits, aims to complete the card number. The point of this script was to demonstrate just how trivial it would be to generate the numbers based on what is permissible under PCI rules. 

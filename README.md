@@ -32,5 +32,8 @@ f(x), x != 1 => if x mod 2 == 0, f(x/2)
                 if x mod 2 == 1, f(3x+1)
 ```
 
+### Monopoly Deluxe
+Camelot run the UK lottery and offer online "instant win" games, and I thought the Monopoly Deluxe game was particularly interesting. The player (you) have two dice which are rolled: the first dice is the number of moves you make around the board, and the second is a multipler. If you roll a 2, and a X4, you'd get 8 moves. It dawned on me that a lot of numbers would be excluded from the game. For example, you can't roll a 7 anymore, or 11. So I simmed up potential routes around the board and *in a true game of chance* what that would look like.
+
 ## Tests
 The "Build Passing" icon you see along the top refers to all given tests in all of the subprojects, where Travis is able to build and execute the unit tests. In reality, that statement will decompile to "The icon reflects the Python projects build status." 

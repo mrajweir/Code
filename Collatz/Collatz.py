@@ -25,7 +25,7 @@ y_axis = list()
 
 # Returns the number of operations needed for the first thousand solutions to the Collatz formula
 #
-for i in range(999999999, 1000009999):
+for i in range(1, 1000000):
     x_axis.append(i)
     collatz(i)
 

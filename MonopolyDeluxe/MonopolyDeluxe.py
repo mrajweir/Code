@@ -80,7 +80,9 @@ if __name__ == "__main__":
 
     # Anywhere that you can potentially move to on the first roll, mark as a tick.
     for move in potential_moves():
-        template.paste(tick, monopoly[move], tick)
+        #move = (move + 4) % 40
+        #print(move)
+        template.paste(tick, monopoly[move+1], tick)
 
     # Show the image
     template.show()

@@ -15,11 +15,11 @@ def collatz(x, m):
     return x
 
 
-m = 21
+m = 3
 max = 1000
 results = dict()
 
-for i in range(1, 17):
+for i in range(1, 100):
     results[i] = list()
     next_term = i
 

@@ -1,0 +1,7 @@
+bs4
+requests
+numpy
+scipy
+matplotlib
+discord
+python-dotenv

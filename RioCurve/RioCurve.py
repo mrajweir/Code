@@ -119,11 +119,10 @@ for i in range(0, MAX):
     # If we're doing statistics only (and not graphs) then we'll execute this fragment and gtfo...
     if TYPE == "tank-count" or TYPE == "healer-count":
         for result in results["rankings"]["rankedCharacters"]:
-            cls_name = "{0}-{1}".format(
+            cls_name = "{0}_{1}".format(
                 result["character"]["class"]["slug"],
                 result["character"]["spec"]["slug"]
             )
-            cls_name = cls_name.replace("-", "_")
 
             try:
                 class_spec_count[cls_name] = class_spec_count[cls_name] + 1

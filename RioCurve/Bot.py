@@ -1,31 +1,15 @@
-import os
-import discord
-import random
 from discord.ext import commands
-from dotenv import load_dotenv
-import graph
+import discord
+import json
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+with open("discord-properties.json", "r") as f:
+    discord_properties = json.load(f)
 
-bot = commands.Bot(command_prefix='!')
+client = discord.Client()
+bot = commands.Bot(command_prefix="!")
 
+@bot.command(name="graph")
+async def test_test(ctx):
+        await ctx.send("Gonna make you a graph, gonna cook it up _real_ nice...")
 
-@bot.command(name='graph')
-async def nine_nine(ctx, role: str):
-    g = graph.Graph(role)
-    graph_path = g.generate()
-    await ctx.send(file=discord.File(graph_path))
-
-bot.run(TOKEN)
-
-
-"""
-Possible structures
-
-By role
-By class
-By spec
-By faction
-By server
-"""
+bot.run(discord_properties["token"])

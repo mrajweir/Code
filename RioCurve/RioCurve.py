@@ -35,7 +35,7 @@ import matplotlib.pyplot as plt
 #      https://raider.io/api/mythic-plus/rankings/characters?region=eu&season=season-df-1&realm=tarren-mill...
 #      This will be your API endpoint to scan.
 
-TYPE = "healer-count"
+TYPE = "tank-count"
 KEYSTONE_ACHIEVEMENT_LINES = True
 API_REQUEST_WAIT_IN_SECONDS = 0.5
 

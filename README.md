@@ -8,7 +8,7 @@ Oh, and if anyone other than me is reading this: hi!
 
 ## Projects
 
-### Aliquot Sequences
+### Aliquote Sequences
 
 An aliquote sequence is a sequence of numbers who's factors add up to a new number. It's a recursive process of adding factors together of integers. For example, Factors of 8 are 1, 2, 4, (and 8 - but we ignore the number itself.) If you add those facotrs, you get 7. Which is prime, and so only has two factors (1 and 7 - but we don't count the 7). Aliquote sequences produce runs of numbers that either end with 1, a perfect number, or a socialble/amicable loop of numbers.
 ### Sudoku

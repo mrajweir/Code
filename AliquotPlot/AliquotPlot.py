@@ -47,11 +47,10 @@ if __name__ == '__main__':
 
     aliquot_sequences = list()
 
-    low = 1
-    high = 100
+    low = 2
+    high = 800
     for i in range(low, high):
         aq_seq = aliquot_sequence(i)
-        aq_seq.append(1)
         log_aq_seq = [math.log10(num) for num in aq_seq]
 
         aliquot_sequences.append({
@@ -62,7 +61,7 @@ if __name__ == '__main__':
         print(aq_seq)
 
         plt.rcParams['figure.figsize'] = [14, 14]
-        plt.text(0.5, 0.5, "Max number: " + str(max(aq_seq)))
+        # plt.text(0.5, 0.5, "Max number: " + str(max(aq_seq)))
         plt.margins(0)
         plt.plot(log_aq_seq)
 

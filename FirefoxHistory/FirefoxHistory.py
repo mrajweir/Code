@@ -1,8 +1,9 @@
 import sqlite3
+import platform
 
 
-def dump_cookies(should_dump_table_structure=False):
-    con = sqlite3.connect("C:\\Users\\mrajw\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\gms2uh6q.default-release\\cookies.sqlite")
+def dump_cookies(path, should_dump_table_structure=False):
+    con = sqlite3.connect(f"{path}cookies.sqlite")
     cur = con.cursor()
 
     if should_dump_table_structure:
@@ -16,9 +17,8 @@ def dump_cookies(should_dump_table_structure=False):
     con.close()
 
 
-def dump_history(should_dump_table_structure=False):
-    con = sqlite3.connect(
-        "C:\\Users\\mrajw\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\gms2uh6q.default-release\\places.sqlite")
+def dump_history(path, should_dump_table_structure=False):
+    con = sqlite3.connect(f"{path}places.sqlite")
     cur = con.cursor()
 
     if should_dump_table_structure:
@@ -32,4 +32,8 @@ def dump_history(should_dump_table_structure=False):
     cur.close()
 
 
-dump_history()
+if __name__ == "__main__":
+    path = "C:\\Users\\mrajw\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\gms2uh6q.default-release\\"
+
+    dump_history(path)
+    dump_cookies(path)
